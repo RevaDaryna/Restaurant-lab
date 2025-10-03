@@ -1,0 +1,630 @@
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #111;
+  color: #fff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* === NAVBAR === */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 14px 8%;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 24px;
+  color: #ffcc00;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin: 0;
+  padding: 0; 
+}
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  transition: color 0.3s;
+}
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 16px; 
+  min-width: 96px; 
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-decoration: none;
+  transition: background-color 0.25s, color 0.25s, border-color 0.25s,
+    box-shadow 0.25s;
+  outline: none; 
+}
+.nav-actions a:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.35); 
+}
+
+.nav-actions .login {
+  background: transparent;
+  border: 2px solid #ffcc00; 
+  color: #ffcc00;
+}
+
+.nav-actions .login:hover {
+  background: #ffcc00;
+  color: #111;
+}
+
+.nav-actions .register {
+  background: #ffcc00;
+  color: #111;
+  border: 2px solid #ffcc00;
+}
+.nav-actions .register:hover {
+  background: #ffd84d;
+  border-color: #ffd84d;
+  color: #111;
+}
+.menu-toggle {
+  display: none;
+}
+
+/* ===== WRAPPER з фоном ===== */
+.hero-wrapper {
+  background: url("https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1920&auto=format&fit=crop")
+    center/cover no-repeat;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+/* === HERO === */
+.hero {
+  position: relative;
+  min-height: 70vh;
+  display: grid;
+  place-items: center;
+  padding: 88px 16px;
+  text-align: center;
+}
+
+.hero-inner {
+  position: relative;
+  max-width: 980px;
+  margin-inline: auto;
+  padding-inline: 12px;
+}
+
+.hero-title {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: 0.5px;
+  margin: 0 0 20px;
+  color: #ddb100;
+  font-size: clamp(42px, 6vw, 86px);
+  text-shadow: 0 6px 24px rgba(0, 0, 0, 0.6);
+}
+
+.hero-text {
+  margin: 0 auto 28px;
+  max-width: 780px;
+  font-size: clamp(14px, 1.9vw, 18px);
+  line-height: 1.7;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+.hero-actions {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 22px;
+  font-weight: 600;
+  border-radius: 999px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+  background: #fff;
+  color: #111;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+  transform: translateY(1px) scale(0.995);
+}
+
+.btn:hover {
+  background: #ffe9c2;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+}
+
+/* === MENU === */
+
+.container-sektion {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.restaurant-menu-title {
+  font-size: 40px;
+  line-height: calc(44 / 40);
+  margin-bottom: 78px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  text-align: center;
+}
+
+.container-restaurant-menu {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu-hot-meals,
+.menu-dishes-snacks,
+.menu-salads,
+.menu-desserts-drinks {
+  margin-top: 22px;
+}
+
+.menu-title {
+  font-style: italic;
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  margin-bottom: 10px;
+}
+
+.menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  max-width: 475px;
+}
+
+.menu-item-center-cont-1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.menu-item-center-cont-2 {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-title-drinks {
+  margin-top: 32px;
+}
+
+.menu-subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0.02em;
+  color: #f7f7f7;
+  margin-left: 20px;
+}
+
+.item-weight {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.02em;
+  color: #d8d7d7;
+}
+
+.item-ingradients {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: calc(14 / 10);
+  letter-spacing: 0.18em;
+  color: rgba(216, 215, 215, 0.5);
+  width: 210px;
+}
+
+.item-price {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: 0.02em;
+  color: #f7f7f7;
+  height: 18px;
+  text-align: right;
+}
+
+.menu-hot-meals,
+.menu-dishes-snacks,
+.menu-salads,
+.menu-desserts-drinks {
+  margin-top: 22px;
+  flex-basis: calc((100% - 74px) / 2);
+}
+
+.menu-title {
+  font-size: 24px;
+  line-height: calc(24 / 24);
+  margin-bottom: 32px;
+}
+
+.menu-title-drinks {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.menu-subtitle {
+  font-size: 18px;
+  line-height: calc(24 / 18);
+}
+
+.item-weight {
+  font-size: 14px;
+  line-height: calc(18 / 14);
+}
+
+.item-ingradients {
+  font-size: 12px;
+  line-height: calc(18 / 12);
+  max-width: 325px;
+}
+
+.item-price {
+  font-size: 18px;
+  line-height: calc(24 / 18);
+  height: 24px;
+}
+
+.menu-dishes-snacks,
+.menu-salads,
+.menu-desserts-drinks {
+  display: block;
+}
+
+.menu-list-list {
+  padding-left: 20px;
+}
+
+/* ===== Реєстрація ===== */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+.form label {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+.form input,
+.form select {
+  padding: 10px;
+  border: 1px solid #555;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.form input:focus,
+.form select:focus {
+  border-color: #ffcc00;
+  outline: none;
+}
+.form .btn {
+  background: #ffcc00;
+  color: #111;
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.form .btn:hover {
+  background: #ffd84d;
+}
+
+/* ===== МОДАЛЬНЕ ВІКНО ===== */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+  z-index: 2000;
+}
+
+.modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-content {
+  background: #fff;
+  color: #111;
+  padding: 24px 36px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 400px;
+}
+
+/* ===== Слайдер ===== */
+.carousel {
+  position: relative;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-track {
+  display: flex;
+  gap: 20px; 
+  transition: transform 0.5s ease;
+  padding: 10px; 
+}
+
+.carousel-slide {
+  background: #fff; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  flex: 0 0 100%; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Кнопки слайдера*/
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.carousel-button.prev {
+  left: 10px;
+  z-index: 999;
+}
+.carousel-button.next {
+  right: 10px;
+}
+
+/* ===== Події ===== */
+.events {
+  padding: 40px;
+}
+.events h2 {
+  text-align: center;
+}
+.event-grid {
+  display: grid;
+  color: #111;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 20px;
+}
+.event-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #2c2c2c;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+.footer .socials a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+}
+.footer .socials a:hover {
+  color: #ffd700;
+}
+
+/* ===== Адаптивність ===== */
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+  .carousel-slide img {
+    height: 200px;
+  }
+    .nav-links,
+  .nav-actions {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+    color: #ffcc00;
+  }
+
+  /* відкритий стан меню */
+  .nav-links.open,
+  .nav-actions.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 100%;
+    background: #111;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .nav-actions.open {
+    top: 260px;
+  }
+
+    .container-sektion {
+    width: 375px;
+    padding: 40px 10px;
+  }
+
+  .restaurant-menu-title {
+      font-size: 32px;
+  line-height: calc(40 / 32);
+  margin-bottom: 36px;
+  } 
+}
+
+/* FAQ */
+.FAQ-h, .admin-h {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ddb100;
+}
+
+.faq {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #1a1a1a; 
+  border-left: 5px solid #ffcc00;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.faq-item h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  color: #f5f5f5; 
+}
+
+.faq-item p {
+  margin: 0;
+  color: #ccc; 
+}
+
+/* Таблиця */
+.table-container {
+  overflow-x: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #1e1e1e; 
+  color: #f0f0f0;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #333;
+  text-align: left;
+}
+
+th {
+  background: #ffcc00;
+  color: black;
+}

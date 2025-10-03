@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Family Restaurant</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Іконки Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero-wrapper">
+      <div class="container">
+        <!-- Header -->
+        <nav class="navbar">
+          <div class="logo">Elysium</div>
+          <div class="menu-toggle">&#9776;</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#">Event</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
+          </ul>
+          <div class="nav-actions">
+            <a href="login.html" class="login">Login</a>
+            <a href="register.html" class="register">Register</a>
+          </div>
+        </nav>
+
+        <!-- Hero -->
+        <section class="hero">
+          <div class="hero-inner">
+            <h1 class="hero-title">Family Restaurant</h1>
+            <p class="hero-text">
+              Whether you're in the mood for a hearty breakfast, a light lunch,
+              or a romantic dinner, our menu has something for everyone.
+            </p>
+            <div class="hero-actions">
+              <a class="btn" href="#">Book A Table</a>
+              <a class="btn" href="#menu">Our Menu</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Слайдер -->
+    <section class="slider">
+      <div class="carousel">
+        <button class="carousel-button prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div class="carousel-viewport">
+          <ul class="carousel-track">
+            <li class="carousel-slide">
+              <img src="photos/img1.jpg" alt="Фото 1" />
+            </li>
+            <li class="carousel-slide">
+              <img src="photos/img2.jpg" alt="Фото 2" />
+            </li>
+            <li class="carousel-slide">
+              <img src="photos/img3.jpg" alt="Фото 3" />
+            </li>
+          </ul>
+        </div>
+
+        <button class="carousel-button next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <!-- Меню -->
+    <section class="restaurant-menu" id="menu">
+      <div class="container-sektion">
+        <h2 class="restaurant-menu-title">Restaurant menu</h2>
+        <div class="container-restaurant-menu">
+          <div class="menu-hot-meals">
+            <h3 class="menu-title">Hot meals</h3>
+            <ul class="menu-list-list">
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Veal borscht with beans</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Veal, potatoes, cabbage, carrots, onions, beans, garlic,
+                    tomatoes, greens, sour cream
+                  </p>
+                  <p class="item-price">240 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Cheese soup with chicken</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Chicken, potatoes, carrots, onions, mushrooms, soft cheese,
+                    greens
+                  </p>
+                  <p class="item-price">200 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Carbonara pasta</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Tagliatelle pasta, bacon, cream, Parmesan cheese, egg,
+                    greens
+                  </p>
+                  <p class="item-price">430 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Pork steak</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Pork tenderloin, spices, served with sweet chili sauce and
+                    vegetables
+                  </p>
+                  <p class="item-price">500 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Gorbusha in white wine sauce</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Tender redfish, cream sauce based on white wine
+                  </p>
+                  <p class="item-price">400 UAH</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-dishes-snacks">
+            <h3 class="menu-title">Side dishes and snacks</h3>
+            <ul class="menu-list-list">
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Baked vegetables</h4>
+                  <p class="item-weight">200 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Zucchini, pepper, tomato, eggplant
+                  </p>
+                  <p class="item-price">230 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">French fries</h4>
+                  <p class="item-weight">150 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">Potatoes, tomato sauce</p>
+                  <p class="item-price">160 UAN</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Peasant-style potatoes</h4>
+                  <p class="item-weight">150 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">Potatoes, spices, spicy sauces</p>
+                  <p class="item-price">160 UAN</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Crisp pickles from the barrel</h4>
+                  <p class="item-weight">250 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Salted cucumber, pickled tomato, sauerkraut, Korean carrot
+                  </p>
+                  <p class="item-price">350 UAN</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Chicken wings in honey sauce</h4>
+                  <p class="item-weight">400 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Chicken wings, mustard-honey sauce, served with carrots,
+                    celery and blue cheese sauce
+                  </p>
+                  <p class="item-price">-</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-salads">
+            <h3 class="menu-title">Salads</h3>
+            <ul class="menu-list-list">
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Caesar with chicken</h4>
+                  <p class="item-weight">230 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Chicken fillet, lettuce, cherry tomatoes, Parmesan cheese,
+                    croutons, Caesar sauce
+                  </p>
+                  <p class="item-price">450 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Caesar with shrimp</h4>
+                  <p class="item-weight">230 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Tiger shrimp, lettuce, cherry tomatoes, parmesan cheese,
+                    croutons, caesar sauce
+                  </p>
+                  <p class="item-price">300 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Greek salad</h4>
+                  <p class="item-weight">230 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">
+                    Fresh cucumber, tomato, bell pepper, olives, brynza cheese,
+                    lettuce, sauce
+                  </p>
+                  <p class="item-price">280 UAH</p>
+                </div>
+              </li>
+              <li class="menu-item">
+                <div class="menu-item-center-cont-1">
+                  <h4 class="menu-subtitle">Meat salad</h4>
+                  <p class="item-weight">230 g</p>
+                </div>
+                <div class="menu-item-center-cont-2">
+                  <p class="item-ingradients">-</p>
+                  <p class="item-price">300 UAH</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="menu-desserts-drinks">
+            <div class="menu-desserts">
+              <h3 class="menu-title">Desserts</h3>
+              <ul class="menu-list-list">
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Napoleon cake</h4>
+                    <p class="item-price">200 UAH</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Poppy cake</h4>
+                    <p class="item-price">300 UAH</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Tiramisu</h4>
+                    <p class="item-price">260 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="menu-drinks">
+              <h3 class="menu-title menu-title-drinks">Drinks</h3>
+              <ul class="menu-list-list">
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Black/green tea</h4>
+                    <p class="item-price">100 UAH</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Espresso</h4>
+                    <p class="item-price">100 UAH</p>
+                  </div>
+                </li>
+                <li class="menu-item">
+                  <div class="menu-item-center-cont-1">
+                    <h4 class="menu-subtitle">Cappuccino</h4>
+                    <p class="item-price">100 UAH</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Події -->
+    <section class="events">
+      <h2>Наші події</h2>
+      <div class="event-grid">
+        <div class="event-card">Жива музика щоп’ятниці</div>
+        <div class="event-card">-20% на каву студентам</div>
+        <div class="event-card">Нова лінійка десертів</div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2025 Family Restaurant</p>
+      <div class="socials">
+        <a href="tel:+380637997763"><i class="fa-solid fa-phone"></i></a>
+        <a href="mailto:posternak.anhelina@lll.kpi.ua"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://t.me/antu_ix" target="_blank"
+          ><i class="fa-brands fa-telegram"></i
+        ></a>
+        <a href="https://wa.me/380982404850" target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+      </div>
+    </footer>
+
+    <div class="modal" id="notifyModal">
+      <div class="modal-content" id="notifyText">Текст повідомлення</div>
+    </div>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

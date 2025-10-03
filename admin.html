@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Адмін-панель</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <h1 class="admin-h">Адмін-панель: Меню кафе</h1>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Назва страви</th>
+          <th>Категорія</th>
+          <th>Ціна</th>
+          <th>Статус</th>
+          <th>Дії</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Борщ український</td>
+          <td>Перші страви</td>
+          <td>120 грн</td>
+          <td>У меню</td>
+          <td class="actions">
+            <button class="view">👁 Перегляд</button>
+            <button class="edit">✏ Редагувати</button>
+            <button class="delete">🗑 Видалити</button>
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Піца Маргарита</td>
+          <td>Піца</td>
+          <td>180 грн</td>
+          <td>У меню</td>
+          <td class="actions">
+            <button class="view">👁 Перегляд</button>
+            <button class="edit">✏ Редагувати</button>
+            <button class="delete">🗑 Видалити</button>
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Чізкейк</td>
+          <td>Десерти</td>
+          <td>90 грн</td>
+          <td>Немає</td>
+          <td class="actions">
+            <button class="view">👁 Перегляд</button>
+            <button class="edit">✏ Редагувати</button>
+            <button class="delete">🗑 Видалити</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const role = localStorage.getItem("auth_role");
+    if (role !== "admin") {
+      alert("Доступ лише для адміністратора!");
+      window.location.href = "login.html";
+    }
+
+    document.getElementById("logout").addEventListener("click", () => {
+      localStorage.removeItem("auth_email");
+      localStorage.removeItem("auth_role");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Реєстрація</h2>
+
+      <form id="registerForm" class="form" enctype="multipart/form-data">
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Пароль:</label>
+        <input type="password" name="password" required />
+
+        <label>Прізвище:</label>
+        <input type="text" name="surname" required />
+
+        <label>Ім’я:</label>
+        <input type="text" name="name" required />
+
+        <label>По батькові:</label>
+        <input type="text" name="fathername" />
+
+        <label>Дата народження:</label>
+        <input type="date" name="birthdate" required />
+
+        <label>Група:</label>
+        <select name="group" required>
+          <option value="">-- Виберіть групу --</option>
+          <option value="group1">Група 1</option>
+          <option value="group2">Група 2</option>
+          <option value="group3">Група 3</option>
+        </select>
+
+        <label>Файл:</label>
+        <input type="file" name="file" />
+
+        <button type="submit" class="btn">Зареєструватися</button>
+      </form>
+
+      <p>Вже маєте акаунт? <a href="login.html">Увійдіть</a></p>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>
